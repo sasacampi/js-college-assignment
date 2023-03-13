@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Open+Sans:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #E3F2FD;
+
+}
+.container  {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+.container .color  {
+    list-style: none;
+    background: #fff;
+    margin: 13px;
+    padding: 7px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(52, 87, 220, 0.08);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.container .color:active {
+    transform: scale(0.95);
+}
+
+
+.color:hover .rect-box   {
+    filter: brightness(106%);
+}
+
+.color .rect-box  {
+    width: 185px;
+    height: 188px;
+    background: #ef5fa2;
+    border-radius: 5px;
+}
+
+.color .hex-value  {
+    display: block;
+    color: #444;
+    margin: 12px 0 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.refresh-btn{
+    position: fixed;
+    outline: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #ef5fa2;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 15px 25px rgba(52, 87, 220, 0.08);
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+}
